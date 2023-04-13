@@ -18,7 +18,7 @@ final class SignupViewTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testSignupView_WhenSignupProcessInvoked_FirstNameShouldBeAvailable() {
+    func testSignupView_WhenValidFirstNameProvide_ShouldReturnTrue() {
         
         //Arrange
         let sut = SignupView()
