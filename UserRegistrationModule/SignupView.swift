@@ -19,7 +19,23 @@ struct SignupView: View {
     }
     
     func isFirstNameValid(_ name: String) -> Bool {
-        return !name.isEmpty
+        return name.count >= 2
+    }
+    
+    func isLastNameValid(_ name: String) -> Bool {
+        return name.count >= 2
+    }
+    
+    func isEmailValid(_ email: String) -> Bool {
+        return NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}").evaluate(with: email)
+    }
+    
+    func isPasswordValid(_ password: String) -> Bool {
+        return password.count >= 8
+    }
+    
+    func doConfirmPasswordMatch(_ password: String, _ confirmPassword: String) -> Bool {
+        return password == confirmPassword
     }
 }
 
