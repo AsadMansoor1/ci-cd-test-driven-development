@@ -11,7 +11,18 @@
 		D7FB28F729E8009600F08C47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FB28F629E8009600F08C47 /* ContentView.swift */; };
 		D7FB28F929E8009A00F08C47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7FB28F829E8009A00F08C47 /* Assets.xcassets */; };
 		D7FB28FC29E8009A00F08C47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7FB28FB29E8009A00F08C47 /* Preview Assets.xcassets */; };
+		D7FB291629E8190800F08C47 /* UserRegistrationModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FB291529E8190800F08C47 /* UserRegistrationModuleTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7FB291729E8190800F08C47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7FB28E929E8009600F08C47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7FB28F029E8009600F08C47;
+			remoteInfo = UserRegistrationModule;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D7FB28F129E8009600F08C47 /* UserRegistrationModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserRegistrationModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +30,19 @@
 		D7FB28F629E8009600F08C47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D7FB28F829E8009A00F08C47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7FB28FB29E8009A00F08C47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7FB291329E8190800F08C47 /* UserRegistrationModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserRegistrationModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7FB291529E8190800F08C47 /* UserRegistrationModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationModuleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D7FB28EE29E8009600F08C47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FB291029E8190800F08C47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				D7FB28F329E8009600F08C47 /* UserRegistrationModule */,
+				D7FB291429E8190800F08C47 /* UserRegistrationModuleTests */,
 				D7FB28F229E8009600F08C47 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				D7FB28F129E8009600F08C47 /* UserRegistrationModule.app */,
+				D7FB291329E8190800F08C47 /* UserRegistrationModuleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +89,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D7FB291429E8190800F08C47 /* UserRegistrationModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7FB291529E8190800F08C47 /* UserRegistrationModuleTests.swift */,
+			);
+			path = UserRegistrationModuleTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,6 +117,24 @@
 			productReference = D7FB28F129E8009600F08C47 /* UserRegistrationModule.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D7FB291229E8190800F08C47 /* UserRegistrationModuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7FB291929E8190800F08C47 /* Build configuration list for PBXNativeTarget "UserRegistrationModuleTests" */;
+			buildPhases = (
+				D7FB290F29E8190800F08C47 /* Sources */,
+				D7FB291029E8190800F08C47 /* Frameworks */,
+				D7FB291129E8190800F08C47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7FB291829E8190800F08C47 /* PBXTargetDependency */,
+			);
+			name = UserRegistrationModuleTests;
+			productName = UserRegistrationModuleTests;
+			productReference = D7FB291329E8190800F08C47 /* UserRegistrationModuleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +147,10 @@
 				TargetAttributes = {
 					D7FB28F029E8009600F08C47 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					D7FB291229E8190800F08C47 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D7FB28F029E8009600F08C47;
 					};
 				};
 			};
@@ -116,6 +168,7 @@
 			projectRoot = "";
 			targets = (
 				D7FB28F029E8009600F08C47 /* UserRegistrationModule */,
+				D7FB291229E8190800F08C47 /* UserRegistrationModuleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +180,13 @@
 			files = (
 				D7FB28FC29E8009A00F08C47 /* Preview Assets.xcassets in Resources */,
 				D7FB28F929E8009A00F08C47 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FB291129E8190800F08C47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D7FB290F29E8190800F08C47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FB291629E8190800F08C47 /* UserRegistrationModuleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7FB291829E8190800F08C47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7FB28F029E8009600F08C47 /* UserRegistrationModule */;
+			targetProxy = D7FB291729E8190800F08C47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D7FB28FD29E8009A00F08C47 /* Debug */ = {
@@ -317,6 +393,42 @@
 			};
 			name = Release;
 		};
+		D7FB291A29E8190800F08C47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJA34783R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mehmood.asad.UserRegistrationModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UserRegistrationModule.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UserRegistrationModule";
+			};
+			name = Debug;
+		};
+		D7FB291B29E8190800F08C47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJA34783R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mehmood.asad.UserRegistrationModuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UserRegistrationModule.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UserRegistrationModule";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +446,15 @@
 			buildConfigurations = (
 				D7FB290029E8009A00F08C47 /* Debug */,
 				D7FB290129E8009A00F08C47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7FB291929E8190800F08C47 /* Build configuration list for PBXNativeTarget "UserRegistrationModuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7FB291A29E8190800F08C47 /* Debug */,
+				D7FB291B29E8190800F08C47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
