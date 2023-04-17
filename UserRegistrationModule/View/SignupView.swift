@@ -17,10 +17,6 @@ struct SignupView: View {
         }
         .padding()
     }
-    
-    func isFirstNameValid(_ name: String) -> Bool {
-        return !name.isEmpty
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
