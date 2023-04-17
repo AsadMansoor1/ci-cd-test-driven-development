@@ -19,10 +19,11 @@ class SignupWebService {
     
     func processSignup(signupFormModel: SignupFormModel, completionHandler: @escaping (SignupResponseModel?, SignupErrors?) -> Void) {
         
-        guard let signupUrl = URL(string: SignupConstants.signupURL) else {
-            // TODO: - Write a unit test that will return a specific error when url in nil.
+        guard let signupUrl = URL(string: self.urlString) else {
+            completionHandler(nil, SignupErrors.invalidRequestURLError)
             return
         }
+        
         
         var urlRequest = URLRequest(url: signupUrl)
         urlRequest.httpMethod = "POST"
@@ -31,9 +32,13 @@ class SignupWebService {
         
         let dataTask = self.urlSession.dataTask(with: urlRequest) { data, response, error in
             
-            // TODO: - Write a unit test to handle error.
+            if let signupError = error {
+                completionHandler(nil, SignupErrors.failedRequest(description: signupError.localizedDescription))
+                return
+            }
 
-            if let data = data, let responseModel = SignupResponseModel(data: data) {
+            if let data = data, let responseModel = try? JSONDecoder().decode(SignupResponseModel.self, from: data), let _ = responseModel.status {
+                
                 completionHandler(responseModel, nil)
             } else {
                 completionHandler(nil, SignupErrors.responseModelParsingError)
