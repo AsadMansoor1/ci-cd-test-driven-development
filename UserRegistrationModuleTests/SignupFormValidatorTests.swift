@@ -32,8 +32,6 @@ final class SignupFormValidatorTests: XCTestCase {
         //Assert
         XCTAssertTrue(isFirstNameValid, "The isFirstNameValid() method should have returned TRUE for valid first name but has returned FALSE.")
     }
-    
-<<<<<<< Updated upstream
     func testSignupView_WhenTooShortFirstNameProvided_ShouldReturnFalse() {
         //Arrange
         
@@ -109,7 +107,4 @@ final class SignupFormValidatorTests: XCTestCase {
         //Assert
         XCTAssertTrue(doPasswordsMatch, "The doConfirmPasswordMatch() method should have returned TRUE when Confirm Password is same is Password but has returned FALSE.")
     }
-=======
-    
->>>>>>> Stashed changes
 }
