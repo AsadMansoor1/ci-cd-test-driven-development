@@ -1,29 +1,20 @@
 //
-//  ContentView.swift
+//  SignupFormValidator.swift
 //  UserRegistrationModule
 //
-//  Created by Dev on 4/13/23.
+//  Created by Dev on 4/14/23.
 //
 
-import SwiftUI
+import Foundation
 
-struct SignupView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+class SignupFormValidator {
     
     func isFirstNameValid(_ name: String) -> Bool {
-        return name.count >= 2
+        return name.count >= SignupConstants.firstNameMinLength
     }
     
     func isLastNameValid(_ name: String) -> Bool {
-        return name.count >= 2
+        return name.count >= SignupConstants.lastNameMinLength
     }
     
     func isEmailValid(_ email: String) -> Bool {
@@ -31,16 +22,10 @@ struct SignupView: View {
     }
     
     func isPasswordValid(_ password: String) -> Bool {
-        return password.count >= 8
+        return password.count >= SignupConstants.passwordMinLength
     }
     
     func doConfirmPasswordMatch(_ password: String, _ confirmPassword: String) -> Bool {
         return password == confirmPassword
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignupView()
     }
 }
