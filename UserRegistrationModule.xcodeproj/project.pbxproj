@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D71FEC5B29E8559C006EE09E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71FEC5A29E8559C006EE09E /* SignInView.swift */; };
+		D71FEC5D29E855CE006EE09E /* SignInViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71FEC5C29E855CE006EE09E /* SignInViewTests.swift */; };
 		D7FB28F529E8009600F08C47 /* UserRegistrationModuleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FB28F429E8009600F08C47 /* UserRegistrationModuleApp.swift */; };
 		D7FB28F729E8009600F08C47 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FB28F629E8009600F08C47 /* SignupView.swift */; };
 		D7FB28F929E8009A00F08C47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7FB28F829E8009A00F08C47 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D71FEC5A29E8559C006EE09E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		D71FEC5C29E855CE006EE09E /* SignInViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewTests.swift; sourceTree = "<group>"; };
 		D7FB28F129E8009600F08C47 /* UserRegistrationModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserRegistrationModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FB28F429E8009600F08C47 /* UserRegistrationModuleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationModuleApp.swift; sourceTree = "<group>"; };
 		D7FB28F629E8009600F08C47 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			children = (
 				D7FB28F429E8009600F08C47 /* UserRegistrationModuleApp.swift */,
 				D7FB28F629E8009600F08C47 /* SignupView.swift */,
+				D71FEC5A29E8559C006EE09E /* SignInView.swift */,
 				D7FB28F829E8009A00F08C47 /* Assets.xcassets */,
 				D7FB28FA29E8009A00F08C47 /* Preview Content */,
 			);
@@ -93,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				D7FB291C29E84A0C00F08C47 /* SignupViewTests.swift */,
+				D71FEC5C29E855CE006EE09E /* SignInViewTests.swift */,
 			);
 			path = UserRegistrationModuleTests;
 			sourceTree = "<group>";
@@ -197,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71FEC5B29E8559C006EE09E /* SignInView.swift in Sources */,
 				D7FB28F729E8009600F08C47 /* SignupView.swift in Sources */,
 				D7FB28F529E8009600F08C47 /* UserRegistrationModuleApp.swift in Sources */,
 			);
@@ -206,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71FEC5D29E855CE006EE09E /* SignInViewTests.swift in Sources */,
 				D7FB291D29E84A0C00F08C47 /* SignupViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
