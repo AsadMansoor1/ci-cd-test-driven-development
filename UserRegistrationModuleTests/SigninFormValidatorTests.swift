@@ -1,14 +1,14 @@
 //
-//  SignInViewTests.swift
+//  SigninFormValidatorTests.swift
 //  UserRegistrationModuleTests
 //
-//  Created by Dev on 13/04/2023.
+//  Created by Dev on 17/04/2023.
 //
 
 import XCTest
 @testable import UserRegistrationModule
 
-final class SignInViewTests: XCTestCase {
+final class SigninFormValidatorTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -17,10 +17,10 @@ final class SignInViewTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-    
+
     func testSignInView_WhenValidEmailProvide_ShouldReturnTrue() {
         //Arrange
-        let sut = SignInView()
+        let sut = SigninFormValidator()
         
         //Act
         let isEmailValid = sut.isEmailValid("shahidarshad@gmail.com")
@@ -31,7 +31,7 @@ final class SignInViewTests: XCTestCase {
     
     func testSignInView_WhenValidPasswordProvide_ShouldReturnTrue() {
         //Arrange
-        let sut = SignInView()
+        let sut = SigninFormValidator()
         
         //Act
         let isPasswordValid = sut.isPasswordValid("password")

@@ -34,6 +34,7 @@ class SignupWebService {
             // TODO: - Write a unit test to handle error.
 
             if let data = data, let responseModel = SignupResponseModel(data: data) {
+                
                 completionHandler(responseModel, nil)
             } else {
                 completionHandler(nil, SignupErrors.responseModelParsingError)
