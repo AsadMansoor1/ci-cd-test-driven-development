@@ -23,3 +23,4 @@ enum SignupErrors: LocalizedError, Equatable {
         }
     }
 }
+
